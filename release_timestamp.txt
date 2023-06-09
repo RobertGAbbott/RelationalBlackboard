@@ -1,0 +1,36 @@
+This release was built on:
+Wed Jul 10 23:23:20 MDT 2013
+
+jar files in build tree, with checksums:
+arpack-combo-0.1.jar	416261736	1194003
+CommonCore.jar	2429934339	810610
+commons-logging-1.1.1.jar	4131285840	60841
+freetts.jar	375797541	278045
+gov-sandia-cognition-common-core-3.3.2.jar	1828342431	346960
+gov-sandia-cognition-learning-core-3.3.2.jar	4177163927	1401947
+h2-1.3.168.jar	1000951954	1280937
+jcommon-1.0.17.jar	173354787	309920
+jfreechart-1.0.14.jar	138315985	1461633
+JMapViewer.jar	4088752794	319205
+junit-4.8.2.jar	1995333258	237344
+LearningCore.jar	256514342	3593501
+mtj-0.9.14.jar	173349772	632293
+mtj-0.9.14.jar	4262146467	632301
+netlib-java-0.9.3.jar	3967992129	131210
+rbbcore.jar	1240594777	386547
+rbbcore.jar	4274929498	386539
+rbbexamples.jar	2039132424	189126
+rbbml.jar	3742812612	382250
+rbbui.jar	3300037681	402907
+rbbui.jar	3916956264	403292
+rbbui.jar	4123325512	403260
+replete_1.3.jar	937946299	1907497
+SandiaInterativeTimelineVisualization.jar	4165236277	230777
+SandiaTimeline.jar	387952583	231993
+sphinx4.jar	4153566152	831829
+SubSkillsNet.jar	3571928235	370
+swing-layout-1.0.4.jar	3140017888	117412
+swing-layout-1.0.4.jar	524062730	117428
+WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar	1306994984	11126464
+
+CVS Status:

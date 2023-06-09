@@ -1,0 +1,58 @@
+To use the RBB command-line interface, run the rbb jar file.
+Example:
+
+java -jar rbb.jar
+
+This lists the available commands (and subcommands), e.g. create:
+
+java -jar rbb.jar create jdbc:h2:file:MyRBB MyRBB
+
+Note: some of the subcommands require additional jar files in the classpath.
+
+The available commands are:
+
+  attachBlob - Attach arbitrary data to an RBB Event.
+  countEventTags - list the values that occur for each individual tag name, and the number of uses.
+  create - Create an RBB DB.
+  get - Retrieve timeseries from an RBB, optionally interpolating to create snapshots of co-occuring data.
+  getBlob - Retrieve arbitrary data previously attached to an RBB Event
+  getTagsets - retrieve all combinations of values that co-occur for specified tag names in Event Tagsets.
+  put - Put data into an RBB DB.
+  defineTimeCoordinate - Create a time coordinate.
+  defineTimeCoordinatesForEventCombinations - Create time coordinate for each combination of tag values.
+  delete - (Permanently) delete events from the RBB.
+  deleteAttachments - delete data attached to an RBB event, e.g. with attachBlob
+  deleteRBB - delete the entire RBB and the file(s) it was stored in.
+  findEventSequences - find patterns in time-ordered events.
+  ml <subcommand> - RBB ML (machine learning) (rbbml.jar must be in classpath)
+    addFeatures - Make the model use the specified feature(s)
+    create - Create a new RBB ML model.
+    deleteTrainingData - Delete training data from the specified Training Event from the model.
+    deselectAll - De-select any currently selected data.
+    getFeatures - Specify and apply a feature extraction chain (without creating a Model)
+    nextFlag - Jump to the time of the next flag for the specified model
+    observe - Perform feature extraction for the model from the session, sending the results to the console, a plot, or a table.
+    prevFlag - Jump to the time of the previus flag for the specified model
+    print - Print information about the model (and Session, if specified)
+    removeFeatures - The model will disregard the specified feature(s)
+    select [tagset] <tagset2...> - Sequentially select Events matching the specified tagset(s)
+    setSimTime - Jump to specified scenario time
+    storePredictionInputs - Store a set of parameters for the -storedInputs option of the predict command.
+    train - Add the selected example in the Session to the model
+    predict - Apply the model to data
+  server - Runs the H2 server with RBB extensions available (i.e. in the classpath), and passing any arguments to the H2 server.
+  shell - run H2 shell (CLI console) on an RBB
+  stats - print out statistics about the size of the RBB.
+  setTags - add or change tags to events matching the filterTags or ID
+  tags - create the string representation of an RBB Tagset from args name1 value1 name2 value2...
+  TCPServer - print the hostname and port number of the Event server, starting it if necessary.
+  removeTags - remove any/all values of the specified tags for matching Events.
+  ui <subcommand> - graphical display and interaction with an RBB (rbbui.jar must be in classpath)
+    draw - interactively view and create RBB Timeseries as 2d trajectories
+    timeline - display Events on a timeline
+    images - display images attached to Events in the 'images' schema.
+    play - replay an audio or video file using MPlayer.  The replay is synchronized with other RBB components.
+    plot - plot a timeseries against time using JFreeChart.
+    tagTree - a tree view of tagset values.
+    timeSlider - a horizontal scrollbar for controlling time in RBB components
+  version - print the version of this RBB library: <major>.<DB Schema Version>.<revision>
